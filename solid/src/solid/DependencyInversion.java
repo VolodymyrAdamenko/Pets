@@ -20,9 +20,10 @@ public class DependencyInversion {
 /**
  * in this case one class know about another class, which provoke strong coupling. For instance, if
  * we wont to change power producer, we should change a lot in the class. On other hand, we may
- * create interim interface, and inherited in separate classes. Yes of course. And that is a one way
+ * create interim interface, and inherited in separate classes. Yes of course. And that is a one way.
  * 
  */
+//Power station keep tracking
 class PowerStation {
   public void outPowerProducer(PowerPlant variablePowerPlant) {
     variablePowerPlant.energyGeneration();
